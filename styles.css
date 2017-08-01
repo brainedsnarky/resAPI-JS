@@ -9,14 +9,14 @@ flex-wrap: wrap;
 width: 100%;
 background-color: #324376;
 color: white;
-position: relative;
+position: absolute;
 }
 
 .card{
   margin: 5px 5px 0 0;
   display: flex;
   flex-wrap: wrap;
-  width: 1260px;
+  width: auto;
   height: 200px;
   background-color: #586BA4;
   justify-content: center;
@@ -30,19 +30,25 @@ position: relative;
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  /*vertical-align: middle;*/
+
 }
 
 .image-wrapper{
-height: 150px;
-width: 150px;
+max-height: 150px;
+height: auto;
+max-width: 150px;
+width: auto;
 border-radius: 50%;
 margin: 0 5px 0 5px;
+position: relative;
 }
 
 .content-wrapper{
-width: 1090px;
-height: 150px;
+max-width: 1090px;
+width: auto;
+max-height: 150px;
+height: auto;
 margin: 0 5px 0 5px;
 display: flex;
+position: relative;
 }
