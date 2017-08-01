@@ -9,7 +9,6 @@ flex-wrap: wrap;
 width: 100%;
 background-color: #324376;
 color: white;
-position: absolute;
 }
 
 .card{
@@ -17,7 +16,6 @@ position: absolute;
   display: flex;
   flex-wrap: wrap;
   width: auto;
-  height: 200px;
   background-color: #586BA4;
   justify-content: center;
   position: relative;
@@ -46,9 +44,10 @@ position: relative;
 .content-wrapper{
 max-width: 1090px;
 width: auto;
-max-height: 150px;
 height: auto;
 margin: 0 5px 0 5px;
 display: flex;
 position: relative;
+overflow: hidden;
+margin-bottom: 5px;
 }
