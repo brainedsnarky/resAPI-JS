@@ -63,10 +63,8 @@ margin-bottom: 5px;
 .button-wrapper{
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  width: auto;
+  width: 100%;
   justify-content: center;
-  margin-right: 10px;
 }
 
 .active {

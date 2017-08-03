@@ -3,14 +3,17 @@ $("#btn1").click(function(){
 })
 
 $("#supporters_count").click(function(){
+    $(".card").remove();
     $.fn.BySupportersCount("campaign");
 })
 
 $("#amnt_raised").click(function(){
+    $(".card").remove();
     $.fn.ByAmountRaised("campaign");
 })
 
 $("#date_modified").click(function(){
+    $(".card").remove();
     $.fn.ByDateModified("campaign");
 })
 
@@ -57,11 +60,11 @@ $(document).ready(function(){
                 error: function (xhr, textStatus, errorThrown) {
                     console.log('Error in Database');
                 }
-            });
+     });
    }
 
    $.fn.BySupportersCount = function(x){
-              $.ajax({
+            $.ajax({
                 url: 'https://staging.letzchange.org/search?fq=(type:'+ x +')&sort=supporter_count%20desc&row=10',
                 type: 'GET',
                 dataType: 'json',
@@ -100,7 +103,7 @@ $(document).ready(function(){
                 error: function (xhr, textStatus, errorThrown) {
                     console.log('Error in Database');
                 }
-            });
+               });
    }
 
    $.fn.ByAmountRaised = function(x){
@@ -139,14 +142,14 @@ $(document).ready(function(){
                             document.getElementById("main").appendChild(card);
 
                     });
-            },
+                },
                 error: function (xhr, textStatus, errorThrown) {
                     console.log('Error in Database');
                 }
-            });
+               });
    }
 
-      $.fn.ByDateModified = function(x){
+   $.fn.ByDateModified = function(x){
               $.ajax({
                 url: 'https://staging.letzchange.org/search?fq=(type:'+ x +')&sort=created_at%20asc&row=10',
                 type: 'GET',
@@ -182,11 +185,11 @@ $(document).ready(function(){
                             document.getElementById("main").appendChild(card);
 
                     });
-            },
+                },
                 error: function (xhr, textStatus, errorThrown) {
                     console.log('Error in Database');
                 }
-            });
+               });
    }
 
 });
