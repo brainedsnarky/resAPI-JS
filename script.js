@@ -87,6 +87,7 @@ $(document).ready(function(){
                             card.appendChild(contentwrapper);
 
                             document.getElementById("main").appendChild(card);
+                            document.getElementById("btn1").disabled = true;
 
                     });
             },
@@ -162,6 +163,7 @@ $(document).ready(function(){
                             card.appendChild(contentwrapper);
 
                             document.getElementById("main").appendChild(card);
+                            document.getElementById("btn1").disabled = true;
 
                     });
             },
@@ -238,6 +240,7 @@ $(document).ready(function(){
                             card.appendChild(contentwrapper);
 
                             document.getElementById("main").appendChild(card);
+                            document.getElementById("btn1").disabled = true;
 
                     });
                 },
@@ -314,6 +317,7 @@ $(document).ready(function(){
                             card.appendChild(contentwrapper);
 
                             document.getElementById("main").appendChild(card);
+                            document.getElementById("btn1").disabled = true;
 
                     });
                 },
