@@ -3,6 +3,12 @@
       font-size: 18px;
 }
 
+.main-container{
+  margin: 0 auto;
+  max-width: 1350px;
+  width:auto;
+}
+
 .outer-container{
 display: flex;
 flex-wrap: wrap;
