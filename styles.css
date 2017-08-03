@@ -18,13 +18,14 @@ color: white;
 }
 
 .card{
-  margin: 5px 5px 0 0;
+  margin: 5px 0 5px 0;
   display: flex;
   flex-wrap: wrap;
   width: auto;
   background-color: #586BA4;
   justify-content: center;
   position: relative;
+ 
 }
 
 .title-wrapper{
@@ -57,4 +58,100 @@ display: flex;
 position: relative;
 overflow: hidden;
 margin-bottom: 5px;
+}
+
+.button-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: auto;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.active {
+  color: #fefefe;
+  background: #F08239;
+  font-weight: 600;
+}
+
+.btn-white {
+  color: inherit;
+  background: white;
+  border: 1px solid #e7eaec;
+}
+
+
+.btn-lg {
+  padding: 14px 28px 13px 28px;
+  font-size: 13px;
+}
+
+btn {
+  font-weight: 600;
+  letter-spacing: 0px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  border: 1px solid #A7A8AA;
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.btn-lg {
+  padding: 14px 28px 13px 28px;
+  font-size: 13px;
+}
+
+.btn-xs {
+  font-size: 12px;
+}
+
+.btn-theme-bg {
+  border-color: #32c5d2;
+  color: #fff;
+  background-color: #32c5d2;
+}
+
+*********border-buttons**********/
+.border-black {
+  border: 1px solid #333;
+  color: #000;
+  background-color: transparent;
+}
+
+.border-black:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.border-white {
+  border: 1px solid #fff;
+  color: #29335C;
+}
+
+.border-white:hover {
+  background-color: #fff;
+  border-color: #29335C;
+  color: #000;
+}
+
+.border-theme {
+  border: 1px solid #32c5d2;
+  color: #32c5d2;
+}
+
+.border-theme:hover {
+  background-color: #32c5d2;
+  border-color: #32c5d2;
+  color: #fff;
 }
