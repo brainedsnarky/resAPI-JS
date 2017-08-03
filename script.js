@@ -57,7 +57,7 @@ $(document).ready(function(){
                             date = document.createElement('p');
                             date.className = 'text-muted';
                             date.id = "date"+i;
-                            date.innerHTML = d.created_at;
+                            date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
 
                             fasupp = document.createElement('i');
