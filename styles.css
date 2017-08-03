@@ -49,6 +49,11 @@ position: relative;
 margin-bottom: 5px;
 }
 
+.stats-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .content-wrapper{
 max-width: 1090px;
 width: auto;
@@ -152,4 +157,9 @@ btn {
   background-color: #32c5d2;
   border-color: #32c5d2;
   color: #fff;
+}
+
+.text-muted {
+  color: #fff;
+  margin: 10px 0 10px 0 ;
 }

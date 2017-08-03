@@ -47,6 +47,39 @@ $(document).ready(function(){
                             img.setAttribute("src", d.creator_image);
                             imgwrapper.appendChild(img);
 
+                            stat = document.createElement('div');
+                            stat.className ='stats-wrapper';
+                            stat.id ="Stats"+i;
+
+                            fadate = document.createElement('i');
+                            fadate.className = 'fa fa-clock-o';
+
+                            date = document.createElement('p');
+                            date.className = 'text-muted';
+                            date.id = "date"+i;
+                            date.innerHTML = d.created_at;
+                            fadate.appendChild(date);
+
+                            fasupp = document.createElement('i');
+                            fasupp.className = 'fa fa-heart';
+
+                            count = document.createElement('p');
+                            count.className = 'text-muted';
+                            count.id = "count"+i;
+                            count.innerHTML = d.supporter_count;
+                            fasupp.appendChild(count);
+
+                            amount = document.createElement('p');
+                            amount.className = 'text-muted';
+                            amount.id = "amount"+i;
+                            amount.innerHTML = d.raised_amount_in_inr;
+
+                            stat.appendChild(fadate);
+                            stat.appendChild(fasupp);
+                            stat.appendChild(amount);
+
+                            card.appendChild(stat);
+
                             contentwrapper = document.createElement('div');
                             contentwrapper.className = 'content-wrapper';
                             contentwrapper.id = "Content"+i;
@@ -84,11 +117,43 @@ $(document).ready(function(){
                             imgwrapper.className = 'image-wrapper';
                             imgwrapper.id = "Image"+i;
                             card.appendChild(imgwrapper);
-
+                            
                             img = document.createElement('img');
                             img.setAttribute("alt","Image");
                             img.setAttribute("src", d.creator_image);
                             imgwrapper.appendChild(img);
+                            stat = document.createElement('div');
+                            stat.className ='stats-wrapper';
+                            stat.id ="Stats"+i;
+
+                            fadate = document.createElement('i');
+                            fadate.className = 'fa fa-clock-o';
+
+                            date = document.createElement('p');
+                            date.className = 'text-muted';
+                            date.id = "date"+i;
+                            date.innerHTML = d.created_at;
+                            fadate.appendChild(date);
+
+                            fasupp = document.createElement('i');
+                            fasupp.className = 'fa fa-heart';
+
+                            count = document.createElement('p');
+                            count.className = 'text-muted';
+                            count.id = "count"+i;
+                            count.innerHTML = d.supporter_count;
+                            fasupp.appendChild(count);
+
+                            amount = document.createElement('p');
+                            amount.className = 'text-muted';
+                            amount.id = "amount"+i;
+                            amount.innerHTML = d.raised_amount_in_inr;
+
+                            stat.appendChild(fadate);
+                            stat.appendChild(fasupp);
+                            stat.appendChild(amount);
+
+                            card.appendChild(stat);
 
                             contentwrapper = document.createElement('div');
                             contentwrapper.className = 'content-wrapper';
@@ -133,6 +198,39 @@ $(document).ready(function(){
                             img.setAttribute("src", d.creator_image);
                             imgwrapper.appendChild(img);
 
+                            stat = document.createElement('div');
+                            stat.className ='stats-wrapper';
+                            stat.id ="Stats"+i;
+
+                            fadate = document.createElement('i');
+                            fadate.className = 'fa fa-clock-o';
+
+                            date = document.createElement('p');
+                            date.className = 'text-muted';
+                            date.id = "date"+i;
+                            date.innerHTML = d.created_at;
+                            fadate.appendChild(date);
+
+                            fasupp = document.createElement('i');
+                            fasupp.className = 'fa fa-heart';
+
+                            count = document.createElement('p');
+                            count.className = 'text-muted';
+                            count.id = "count"+i;
+                            count.innerHTML = d.supporter_count;
+                            fasupp.appendChild(count);
+
+                            amount = document.createElement('p');
+                            amount.className = 'text-muted';
+                            amount.id = "amount"+i;
+                            amount.innerHTML = d.raised_amount_in_inr;
+
+                            stat.appendChild(fadate);
+                            stat.appendChild(fasupp);
+                            stat.appendChild(amount);
+
+                            card.appendChild(stat);
+
                             contentwrapper = document.createElement('div');
                             contentwrapper.className = 'content-wrapper';
                             contentwrapper.id = "Content"+i;
@@ -175,6 +273,39 @@ $(document).ready(function(){
                             img.setAttribute("alt","Image");
                             img.setAttribute("src", d.creator_image);
                             imgwrapper.appendChild(img);
+
+                            stat = document.createElement('div');
+                            stat.className ='stats-wrapper';
+                            stat.id ="Stats"+i;
+
+                            fadate = document.createElement('i');
+                            fadate.className = 'fa fa-clock-o';
+
+                            date = document.createElement('p');
+                            date.className = 'text-muted';
+                            date.id = "date"+i;
+                            date.innerHTML = d.created_at;
+                            fadate.appendChild(date);
+
+                            fasupp = document.createElement('i');
+                            fasupp.className = 'fa fa-heart';
+
+                            count = document.createElement('p');
+                            count.className = 'text-muted';
+                            count.id = "count"+i;
+                            count.innerHTML = d.supporter_count;
+                            fasupp.appendChild(count);
+
+                            amount = document.createElement('p');
+                            amount.className = 'text-muted';
+                            amount.id = "amount"+i;
+                            amount.innerHTML = d.raised_amount_in_inr;
+
+                            stat.appendChild(fadate);
+                            stat.appendChild(fasupp);
+                            stat.appendChild(amount);
+
+                            card.appendChild(stat);
 
                             contentwrapper = document.createElement('div');
                             contentwrapper.className = 'content-wrapper';
