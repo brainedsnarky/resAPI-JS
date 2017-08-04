@@ -52,6 +52,7 @@ margin-bottom: 5px;
 .stats-wrapper{
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .content-wrapper{

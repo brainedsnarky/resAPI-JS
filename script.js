@@ -133,7 +133,6 @@ $(document).ready(function(){
                             fadate.className = 'fa fa-clock-o';
 
                             date = document.createElement('p');
-                            date.className = 'text-muted';
                             date.id = "date"+i;
                             date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
@@ -142,13 +141,11 @@ $(document).ready(function(){
                             fasupp.className = 'fa fa-heart';
 
                             count = document.createElement('p');
-                            count.className = 'text-muted';
                             count.id = "count"+i;
                             count.innerHTML = d.supporter_count;
                             fasupp.appendChild(count);
 
                             amount = document.createElement('p');
-                            amount.className = 'text-muted';
                             amount.id = "amount"+i;
                             amount.innerHTML = d.raised_amount_in_inr;
 
@@ -210,7 +207,6 @@ $(document).ready(function(){
                             fadate.className = 'fa fa-clock-o';
 
                             date = document.createElement('p');
-                            date.className = 'text-muted';
                             date.id = "date"+i;
                             date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
@@ -219,13 +215,11 @@ $(document).ready(function(){
                             fasupp.className = 'fa fa-heart';
 
                             count = document.createElement('p');
-                            count.className = 'text-muted';
                             count.id = "count"+i;
                             count.innerHTML = d.supporter_count;
                             fasupp.appendChild(count);
 
                             amount = document.createElement('p');
-                            amount.className = 'text-muted';
                             amount.id = "amount"+i;
                             amount.innerHTML = d.raised_amount_in_inr;
 
@@ -287,7 +281,6 @@ $(document).ready(function(){
                             fadate.className = 'fa fa-clock-o';
 
                             date = document.createElement('p');
-                            date.className = 'text-muted';
                             date.id = "date"+i;
                             date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
@@ -296,13 +289,11 @@ $(document).ready(function(){
                             fasupp.className = 'fa fa-heart';
 
                             count = document.createElement('p');
-                            count.className = 'text-muted';
                             count.id = "count"+i;
                             count.innerHTML = d.supporter_count;
                             fasupp.appendChild(count);
 
                             amount = document.createElement('p');
-                            amount.className = 'text-muted';
                             amount.id = "amount"+i;
                             amount.innerHTML = d.raised_amount_in_inr;
 
