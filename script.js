@@ -17,6 +17,11 @@ $("#date_modified").click(function(){
     $.fn.ByDateModified("campaign");
 })
 
+$("#home").click(function(){
+    $(".card").remove();
+    $.fn.getCampaigns("campaign");
+})
+
 
 $(document).ready(function(){
     
@@ -130,7 +135,7 @@ $(document).ready(function(){
                             date = document.createElement('p');
                             date.className = 'text-muted';
                             date.id = "date"+i;
-                            date.innerHTML = d.created_at;
+                            date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
 
                             fasupp = document.createElement('i');
@@ -207,7 +212,7 @@ $(document).ready(function(){
                             date = document.createElement('p');
                             date.className = 'text-muted';
                             date.id = "date"+i;
-                            date.innerHTML = d.created_at;
+                            date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
 
                             fasupp = document.createElement('i');
@@ -284,7 +289,7 @@ $(document).ready(function(){
                             date = document.createElement('p');
                             date.className = 'text-muted';
                             date.id = "date"+i;
-                            date.innerHTML = d.created_at;
+                            date.innerHTML = (new Date(d.created_at)).toDateString();
                             fadate.appendChild(date);
 
                             fasupp = document.createElement('i');
