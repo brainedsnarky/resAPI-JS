@@ -28,6 +28,7 @@ function searchquery(){
 
     if( term.length > 0 ) {
         $.fn.Search(term,"campaign");
+        $(".card").remove();
     }
     else
     {
@@ -42,6 +43,7 @@ function Advsearchquery(){
 
     if(Advterm.length > 0){
         $.fn.AdvancedSearch(Advterm);
+        $(".card").remove();
     }
     else
     {
@@ -54,7 +56,7 @@ function Advsearchquery(){
 $(document).ready(function(){
 
    $.fn.getCampaigns = function(x){
-       $.ajax({
+     $.ajax({
                 url: 'https://staging.letzchange.org/search?fq=(type:'+ x + ')&row=10',
                 type: 'GET',
                 dataType: 'json',
