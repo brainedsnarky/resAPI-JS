@@ -127,6 +127,7 @@ btn {
 .top-search {
     display: flex;
     align-items: flex-end;
+    width: 25%;
 }
 .input {
 	position: relative;
