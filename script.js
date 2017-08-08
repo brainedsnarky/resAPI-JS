@@ -22,11 +22,26 @@ $("#home").click(function(){
     $.fn.getCampaigns("campaign");
 })
 
+//Search (Called on keyUP)
 function searchquery(){
     var term = document.getElementById("Termm").value;
 
     if( term.length > 0 ) {
         $.fn.Search(term,"campaign");
+    }
+    else
+    {
+        $(".card").remove();
+        $.fn.getCampaigns("campaign");
+    }
+}
+
+//Advanced Search (Called on keyUP)
+function Advsearchquery(){
+    var Advterm = document.getElementById("AdvTermm").value;
+
+    if(Advterm.length > 0){
+        $.fn.AdvancedSearch(Advterm);
     }
     else
     {
@@ -410,7 +425,7 @@ $(document).ready(function(){
 
    $.fn.AdvancedSearch = function(y){
        $.ajax({
-                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20parent_name'+ y +')&row=10',
+                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20parent_name:'+ y +')&row=10',
                 type: 'GET',
                 dataType: 'json',
                 success: function (data, textStatus, xhr) {
@@ -483,7 +498,7 @@ $(document).ready(function(){
                });
 
                $.ajax({
-                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20creator_name'+ y +')&row=10',
+                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20creator_name:'+ y +')&row=10',
                 type: 'GET',
                 dataType: 'json',
                 success: function (data, textStatus, xhr) {
@@ -556,7 +571,7 @@ $(document).ready(function(){
                });
 
                $.ajax({
-                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20region'+ y +')&row=10',
+                url: 'https://staging.letzchange.org/search?fq=(type:campaign%20AND%20region:'+ y +')&row=10',
                 type: 'GET',
                 dataType: 'json',
                 success: function (data, textStatus, xhr) {
