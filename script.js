@@ -24,7 +24,15 @@ $("#home").click(function(){
 
 function searchquery(){
     var term = document.getElementById("Termm").value;
-    $.fn.Search(term,"campaign");
+
+    if( term.length > 0 ) {
+        $.fn.Search(term,"campaign");
+    }
+    else
+    {
+        $(".card").remove();
+        $.fn.getCampaigns("campaign");
+    }
 }
 
 
