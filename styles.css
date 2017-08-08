@@ -133,6 +133,7 @@ btn {
 	display: inline-block;
 	width: 100%;
   height: 40px;
+  color: #fff;
 	vertical-align: top;
 	float: left;
   font-size: 14px;
@@ -162,7 +163,7 @@ btn {
 
 .input>input:focus {
 	outline: none;
-	border-bottom: 1px solid #262626;
+	border-bottom: 1px solid #fff;
 }
 
 .input>i {
@@ -171,6 +172,7 @@ btn {
   position: absolute;
   top: 35%;
   height: 20%;
+  color: #fff;
 }
 
 .input>i:first-child {
