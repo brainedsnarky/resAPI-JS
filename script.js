@@ -24,7 +24,6 @@ $("#home").click(function(){
 
 
 $(document).ready(function(){
-    
    $.fn.getCampaigns = function(x){
        $.ajax({
                 url: 'https://staging.letzchange.org/search?fq=(type:'+ x + ')&row=10',
