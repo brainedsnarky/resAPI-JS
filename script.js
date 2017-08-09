@@ -10,12 +10,18 @@ $("#supporters_count").click(function(){
     $.fn.BySupportersCount("campaign");
 })
 
+var search_amnt = false;
+
 $("#amnt_raised").click(function(){
+    search_amnt = true;
     $(".card").remove();
     $.fn.ByAmountRaised("campaign");
 })
 
+var search_date = false;
+
 $("#date_modified").click(function(){
+    search_date = true;
     $(".card").remove();
     $.fn.ByDateModified("campaign");
 })
@@ -33,7 +39,16 @@ function searchquery(){
         $.fn.Search(term,"campaign");
         $(".card").remove();
         if( search_count == true ){
-            console.log("Working as expected!!");
+            $("card").remove();
+            $.fn.SearchbySupportersCount(term,"campaing");
+        }
+        else if( search_amnt == true ){
+            $("card").remove();
+            $.fn.SearchbyAmntRaised(term,"campaing");
+        }
+        else if( search_date == true ){
+            $("card").remove();
+            $.fn.SearchbyAmntRaised(term,"campaing");
         }
     }
     else
