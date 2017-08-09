@@ -125,7 +125,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -198,7 +198,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -272,7 +272,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -346,7 +346,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -421,7 +421,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -496,7 +496,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -571,7 +571,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -646,7 +646,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -721,7 +721,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -794,7 +794,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
@@ -867,7 +867,7 @@ $(document).ready(function(){
 
                             amount = document.createElement('p');
                             amount.id = "amount"+i;
-                            amount.innerHTML = d.raised_amount_in_inr;
+                            amount.innerHTML = "₹ " + d.raised_amount_in_inr;
 
                             stat.appendChild(fadate);
                             stat.appendChild(fasupp);
