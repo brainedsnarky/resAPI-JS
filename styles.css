@@ -3,6 +3,16 @@
       font-size: 18px;
 }
 
+
+@media screen and ( max-width: 767px ){
+  .main-container{
+    padding: 0 10px 0 10px;
+  }
+  .top-search{
+    display: none;
+  }
+}
+
 .main-container{
   margin: 0 auto;
   max-width: 1350px;
