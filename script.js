@@ -31,9 +31,13 @@ $("#home").click(function(){
     $.fn.getCampaigns("campaign");
 })
 
+$(".search-icon").click(function(){
+    $("#mobile").css("display","block");
+})
+
 $(document).scroll(function(){
     if($(window).scrollTop()>5){
-        $(".Head-wrapper").add
+        $(".HEAD-Wrapper").add
     }
 })
 
