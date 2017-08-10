@@ -35,6 +35,10 @@ $(".search-icon").click(function(){
     $("#mobile").css("display","block");
 })
 
+$(".arrow").click(function(){
+    $('#mobile').css("display","none");
+})
+
 $(document).scroll(function(){
     if($(window).scrollTop()>5){
         $(".HEAD-Wrapper").add

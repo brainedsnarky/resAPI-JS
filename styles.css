@@ -205,6 +205,11 @@ btn {
 	text-align: right;
 }
 
+.arrow{
+  color: black;
+  margin-top: 5px;
+}
+
 @media screen and ( max-width: 767px ){
   .main-container{
     padding: 0 10px 0 10px;
