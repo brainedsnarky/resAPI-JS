@@ -31,6 +31,12 @@ $("#home").click(function(){
     $.fn.getCampaigns("campaign");
 })
 
+$(document).scroll(function(){
+    if($(window).scrollTop()>5){
+        $(".Head-wrapper").add
+    }
+})
+
 //Search (Called on keyUP)
 function searchquery(){
     var term = document.getElementById("Termm").value;
@@ -51,7 +57,7 @@ function searchquery(){
             $("card").remove();
             $.fn.SearchbyCreatedAt(term,"campaing");
         }
-        
+
     }
     else
     {

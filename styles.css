@@ -17,6 +17,12 @@ background-color: #586BA4;
 color: white;
 }
 
+.HEADER-Wrapper{
+  display:flex; 
+  justify-content:space-around;
+  width: 100%;
+}
+
 .card{
   margin: 5px 0 5px 0;
   display: flex;
@@ -30,8 +36,8 @@ color: white;
 
 .title{
   margin:auto; 
-  width:50%; 
-  text-align:center;
+  width:50%;
+  text-align: center;
 }
 
 .search-icon{
@@ -211,7 +217,8 @@ btn {
   }
   .search-icon{
     display: inline-block;
-    float: right;
     padding: 5px;
+    width: 24%;
+    text-align: right;
   }
 }
