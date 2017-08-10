@@ -49,7 +49,7 @@ $(document).scroll(function(){
 function searchquery(){
     var term = document.getElementById("Termm").value;
 
-    if( term.length > 0 ) {
+    if( term.length > 0  ) {
         $.fn.Search(term,"campaign");
         $(".card").remove();
 
@@ -74,6 +74,34 @@ function searchquery(){
     }
 }
 
+function Searchquery(){
+    var Term = document.getElementById("termm").value;
+
+    if( Term.length > 0 ) {
+        $.fn.Search(Term,"campaign");
+        $(".card").remove();
+
+        if( search_count == true ){
+            $("card").remove();
+            $.fn.SearchbySupportersCount(Term,"campaing");
+        }
+        else if( search_amnt == true ){
+            $("card").remove();
+            $.fn.SearchbyAmntRaised(Term,"campaing");
+        }
+        else if( search_date == true ){
+            $("card").remove();
+            $.fn.SearchbyCreatedAt(Term,"campaing");
+        }
+
+    }
+    else
+    {
+        $(".card").remove();
+        $.fn.getCampaigns("campaign");
+    }
+}
+
 //Advanced Search (Called on keyUP)
 function Advsearchquery(){
     var Advterm = document.getElementById("AdvTermm").value;
@@ -84,17 +112,44 @@ function Advsearchquery(){
 
         if( search_count == true ){
             $("card").remove();
-            $.fn.AdvancedSearchBySuppCount(term,"campaing");
+            $.fn.AdvancedSearchBySuppCount(Advterm,"campaing");
         }
         else if( search_amnt == true ){
             $("card").remove();
-            $.fn.AdvancedSearchByAmntRaised(term,"campaing");
+            $.fn.AdvancedSearchByAmntRaised(Advterm,"campaing");
         }
         else if( search_date == true ){
             $("card").remove();
-            $.fn.AdvancedSearchByCreatedAt(term,"campaing");
+            $.fn.AdvancedSearchByCreatedAt(Advterm,"campaing");
         }
 
+    }
+    else
+    {
+        $(".card").remove();
+        $.fn.getCampaigns("campaign");
+    }
+}
+
+function advsearchquery(){
+    var advterm = document.getElementById("advTermm").value;
+
+    if(advterm.length > 0){
+        $.fn.AdvancedSearch(advterm);
+        $(".card").remove();
+
+        if( search_count == true ){
+            $("card").remove();
+            $.fn.AdvancedSearchBySuppCount(advterm,"campaing");
+        }
+        else if( search_amnt == true ){
+            $("card").remove();
+            $.fn.AdvancedSearchByAmntRaised(advterm,"campaing");
+        }
+        else if( search_date == true ){
+            $("card").remove();
+            $.fn.AdvancedSearchByCreatedAt(advterm,"campaing");
+        }
     }
     else
     {
