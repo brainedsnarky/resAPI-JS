@@ -3,25 +3,29 @@ $("#btn1").click(function(){
 })
 
 var search_count = false;
+var search_amnt = false;
+var search_date = false;
 
 $("#supporters_count").click(function(){
     search_count = true;
+    search_amnt = false;
+    search_date = false;
     $(".card").remove();
     $.fn.BySupportersCount("campaign");
 })
 
-var search_amnt = false;
-
 $("#amnt_raised").click(function(){
     search_amnt = true;
+    search_count = false;
+    search_date = false;
     $(".card").remove();
     $.fn.ByAmountRaised("campaign");
 })
 
-var search_date = false;
-
 $("#date_modified").click(function(){
     search_date = true;
+    search_amnt = false;
+    search_count = false;
     $(".card").remove();
     $.fn.ByDateModified("campaign");
 })
@@ -52,26 +56,48 @@ function searchquery(){
     if( term.length > 0  ) {
         $.fn.Search(term,"campaign");
         $(".card").remove();
-
-        if( search_count == true ){
-            $("card").remove();
-            $.fn.SearchbySupportersCount(term,"campaing");
-        }
-        else if( search_amnt == true ){
-            $("card").remove();
-            $.fn.SearchbyAmntRaised(term,"campaing");
-        }
-        else if( search_date == true ){
-            $("card").remove();
-            $.fn.SearchbyCreatedAt(term,"campaing");
-        }
-
     }
     else
     {
         $(".card").remove();
         $.fn.getCampaigns("campaign");
     }
+
+        if( search_count == true ){
+            
+            if( term.length > 0){
+                $("card").remove();
+                $.fn.SearchbySupportersCount(term,"campaign");
+            }
+            else{
+                $("card").remove();
+                $.fn.BySupportersCount("campaign");
+                }
+            }
+        else if( search_amnt == true ){
+
+            if(term.length > 0){
+                $("card").remove();
+                $.fn.SearchbyAmntRaised(term,"campaign");
+            }
+            else{
+                $("card").remove();
+                $.fn.ByAmountRaised("campaign");
+            }
+            
+        }
+        else if( search_date == true ){
+
+            if(term.length > 0){
+                $("card").remove();
+                $.fn.SearchbyCreatedAt(term,"campaign");
+            }
+            else{
+                $("card").remove();
+                $.fn.BySupportersCount("campaign");
+            }
+            
+        }
 }
 
 function Searchquery(){
@@ -80,25 +106,46 @@ function Searchquery(){
     if( Term.length > 0 ) {
         $.fn.Search(Term,"campaign");
         $(".card").remove();
-
-        if( search_count == true ){
-            $("card").remove();
-            $.fn.SearchbySupportersCount(Term,"campaing");
-        }
-        else if( search_amnt == true ){
-            $("card").remove();
-            $.fn.SearchbyAmntRaised(Term,"campaing");
-        }
-        else if( search_date == true ){
-            $("card").remove();
-            $.fn.SearchbyCreatedAt(Term,"campaing");
-        }
-
     }
     else
     {
         $(".card").remove();
         $.fn.getCampaigns("campaign");
+    }
+
+    if( search_count == true ){
+
+        if(Term.length > 0){
+            $("card").remove();
+            $.fn.SearchbySupportersCount(Term,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.BySupportersCount("campaign");
+        }
+        
+    }
+    else if( search_amnt == true ){
+
+        if( Term.length > 0 ) {
+            $("card").remove();
+            $.fn.SearchbyAmntRaised(Term,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByAmountRaised("campaign");
+        }
+    }
+    else if( search_date == true ){
+
+        if( Term.length > 0 ) {
+            $("card").remove();
+            $.fn.SearchbyCreatedAt(Term,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByDateModified("campaign");
+        }
     }
 }
 
@@ -109,26 +156,47 @@ function Advsearchquery(){
     if(Advterm.length > 0){
         $.fn.AdvancedSearch(Advterm);
         $(".card").remove();
-
-        if( search_count == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchBySuppCount(Advterm,"campaing");
-        }
-        else if( search_amnt == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchByAmntRaised(Advterm,"campaing");
-        }
-        else if( search_date == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchByCreatedAt(Advterm,"campaing");
-        }
-
     }
     else
     {
         $(".card").remove();
         $.fn.getCampaigns("campaign");
     }
+
+    if( search_count == true ){
+
+        if(Advterm.length > 0){
+            $("card").remove();
+            $.fn.AdvancedSearchBySuppCount(Advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.BySupportersCount("campaign");
+        }
+    }
+    else if( search_amnt == true ){
+
+        if(Advterm.length > 0){
+            $("card").remove();
+            $.fn.AdvancedSearchByAmntRaised(Advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByAmountRaised("campaign");
+        }
+    }
+    else if( search_date == true ){
+
+        if(Advterm.length > 0){
+            $("card").remove();
+            $.fn.AdvancedSearchByCreatedAt(Advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByDateModified("campaign");
+        }
+    }
+
 }
 
 function advsearchquery(){
@@ -137,24 +205,46 @@ function advsearchquery(){
     if(advterm.length > 0){
         $.fn.AdvancedSearch(advterm);
         $(".card").remove();
-
-        if( search_count == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchBySuppCount(advterm,"campaing");
-        }
-        else if( search_amnt == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchByAmntRaised(advterm,"campaing");
-        }
-        else if( search_date == true ){
-            $("card").remove();
-            $.fn.AdvancedSearchByCreatedAt(advterm,"campaing");
-        }
     }
     else
     {
         $(".card").remove();
         $.fn.getCampaigns("campaign");
+    }
+
+    if( search_count == true ){
+
+        if(advterm.length > 0){
+            $("card").remove();
+            $.fn.AdvancedSearchBySuppCount(advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.BySupportersCount("campaign");
+        }
+        
+    }
+    else if( search_amnt == true ){
+
+        if(advterm.length > 0){
+            $("card").remove();
+            $.fn.AdvancedSearchByAmntRaised(advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByAmountRaised("campaign");
+        }
+    }
+    else if( search_date == true ){
+
+        if(advterm.length > 0){
+        $("card").remove();
+        $.fn.AdvancedSearchByCreatedAt(advterm,"campaign");
+        }
+        else{
+            $("card").remove();
+            $.fn.ByDateModified("campaign");
+        }
     }
 }
 
